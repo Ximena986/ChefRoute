@@ -1,0 +1,27 @@
+{
+  "plato": "Pasta Bolognesa Especial",
+  "tareas": [
+    "Cortar Verduras",
+    "Picar Carne",
+    "Hervir Agua",
+    "Cocer Pasta",
+    "Hacer Salsa",
+    "Mezclar y Servir"
+  ],
+  "descripciones": [
+    "Lavar y cortar las verduras",
+    "Picar la carne",
+    "Poner agua a hervir",
+    "Cocer la pasta",
+    "Preparar la salsa",
+    "Integrar los ingredientes y servir"
+  ],
+  "duracionesMinutos": [10, 15, 8, 10, 20, 4],
+  "dependencias": [
+    { "desde": "Cortar Verduras", "hacia": "Hacer Salsa", "tiempoMinutos": 10 },
+    { "desde": "Picar Carne", "hacia": "Hacer Salsa", "tiempoMinutos": 15 },
+    { "desde": "Hervir Agua", "hacia": "Cocer Pasta", "tiempoMinutos": 8 },
+    { "desde": "Hacer Salsa", "hacia": "Mezclar y Servir", "tiempoMinutos": 20 },
+    { "desde": "Cocer Pasta", "hacia": "Mezclar y Servir", "tiempoMinutos": 12 }
+  ]
+}
